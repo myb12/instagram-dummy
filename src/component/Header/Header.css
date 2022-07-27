@@ -1,0 +1,114 @@
+    .header {
+        height: 60px;
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        border-bottom: 1px solid rgb(219, 219, 219);
+        transition: height 0.2s ease-in-out;
+    }
+
+    .navbar-brand img {
+        width: 110px;
+    }
+
+    .header-search-wrapper {
+        width: 190px;
+        position: relative;
+    }
+
+
+    .header-search-icon {
+        color: #8e8e8e;
+        font-size: 15px;
+        position: absolute;
+        left: 16px;
+        top: 12px;
+        transition: 0.2s all ease-in-out;
+    }
+
+    .header-search {
+        background-color: #efefef !important;
+        border-radius: 10px !important;
+        padding-left: 40px !important;
+        transition: 0.3s all linear;
+        height: 36px;
+        width: 236px !important;
+    }
+
+    .header-search::placeholder {
+        color: #8e8e8e !important;
+        font-size: 16px !important;
+    }
+
+    .header-search:focus {
+        box-shadow: none !important;
+    }
+
+    .navigation-item-third svg {
+        color: #050505;
+        font-size: 20px;
+    }
+
+    .header-icons {
+        display: flex;
+        align-items: center;
+    }
+
+    .header-icons svg,
+    .header-icons img {
+        margin-left: 22px;
+        cursor: pointer;
+    }
+
+    .profile-pic img {
+        height: 24px;
+        width: 24px;
+        border-radius: 50%;
+    }
+
+    .message-badge {
+        background-color: #ff3041;
+        height: 18px;
+        width: 18px;
+        border-radius: 50%;
+        color: #fff;
+        font-size: 11px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: -4px;
+        right: -8px;
+    }
+
+    .search-clicked input {
+        padding-left: 14px !important;
+    }
+
+    .search-clicked .header-search-icon {
+        display: none !important;
+    }
+
+    .search-clicked .search-close-icon {
+        display: block !important;
+    }
+
+    .search-close-icon {
+        position: absolute;
+        right: -38px;
+        top: 10px;
+        color: #e7dada;
+        display: none;
+    }
+
+
+    @media screen and (max-width:480px) {
+        .navbar-brand img {
+            width: 75px;
+        }
+
+        .header-icons svg,
+        .header-icons img {
+            margin-left: 10px;
+        }
+    }
