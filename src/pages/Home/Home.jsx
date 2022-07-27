@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Home.css';
 import Header from '../../component/Header/Header'
 import StorySlider from '../../component/StorySlider/StorySlider';
+import Posts from '../../component/Posts/Posts';
 
 const Home = () => {
     const [searchClicked, setSearchClicked] = useState(false);
@@ -21,6 +22,7 @@ const Home = () => {
             <div className="row" style={{ marginTop: 60 }}>
                 <div className="col-12 col-lg-8">
                     <StorySlider />
+                    <Posts />
                 </div>
                 <div className="col-12 col-lg-4">
 

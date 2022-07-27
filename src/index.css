@@ -22,3 +22,7 @@ code {
   margin-right: auto;
   margin-left: auto;
 }
+
+.container {
+  max-width: 975px !important;
+}

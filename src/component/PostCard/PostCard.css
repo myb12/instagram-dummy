@@ -1,0 +1,136 @@
+.post-card {
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    margin-bottom: 24px;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-user-name {
+    margin-left: 14px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #262626;
+}
+
+.user-icon img {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+}
+
+.post-image img {
+    max-width: 100%;
+}
+
+.reaction {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+}
+
+.heart,
+.comment,
+.share,
+.bookmark {
+    padding-left: 8px;
+    padding-right: 8px;
+    cursor: pointer;
+}
+
+.reaction-icons {
+    transition: all 0.2s linear;
+}
+
+.reaction-icons:hover {
+    fill: #bdbdbd;
+    color: #bdbdbd;
+}
+
+.react-by {
+    padding: 8px 16px;
+}
+
+.react-by img {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
+.liked-by {
+    margin-bottom: 0;
+    margin-left: 6px;
+    color: #262626;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.liked-by span {
+    font-weight: 600;
+}
+
+.react-by small {
+    color: #8E8E8E;
+    font-size: 10px;
+    display: block;
+    text-align: left;
+    padding-left: 8px;
+    margin-top: 12px;
+}
+
+.post-card-footer {
+    border-top: 1px solid rgb(239, 239, 239);
+    color: rgb(142, 142, 142);
+    font-size: 14px;
+    line-height: 18px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post-card-footer a {
+    color: #0095f6 !important;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.post-card-input {
+    border: none;
+    margin-left: 4px;
+}
+
+.post-card-input:focus {
+    box-shadow: none !important;
+}
+
+.post-card-input::placeholder {
+    font-size: 14px;
+    color: #262626;
+}
+
+.heart-clicked {
+    fill: #ed4956 !important;
+}
+
+.heart-clicked {
+    animation: scale-animation 0.45s ease-in-out;
+}
+
+
+@keyframes scale-animation {
+    from {
+        transform: scale(1.2);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}

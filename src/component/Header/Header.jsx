@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Header.css';
 import { BsSearch } from 'react-icons/bs';
 import { RiCloseCircleFill } from 'react-icons/ri';
