@@ -1,0 +1,30 @@
+/* rgb(0,149,246) */
+
+.slick-dots li.slick-active button:before {
+    font-size: 7px;
+    color: #0095f6;
+}
+
+.slick-dots li button:before {
+    font-size: 7px;
+}
+
+.slick-dots li {
+    width: 1px !important;
+}
+
+.post-image-slider .slick-prev {
+    z-index: 2;
+    margin-left: 30px;
+}
+
+.post-image-slider .slick-next {
+    z-index: 2;
+    margin-right: 36px;
+}
+
+.post-image-slider .slick-prev:before,
+.post-image-slider .slick-next:before {
+    opacity: 1;
+    font-size: 20px !important;
+}

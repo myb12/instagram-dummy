@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PostImageSlider from '../PostImageSlider/PostImageSlider';
 import './PostCard.css';
 
 let postImage = [
@@ -32,7 +33,14 @@ const PostCard = () => {
             </div>
 
             <div className='post-image'>
-                <img src="https://i.ibb.co/HhnqLTT/friend-1.jpg" alt="" />
+                {
+                    postImage.length === 1 && <img src="https://i.ibb.co/HhnqLTT/friend-1.jpg" alt="" />
+                }
+
+                {
+                    postImage.length > 1 && <PostImageSlider images={postImage} />
+                }
+
             </div>
 
             <div className="reaction">
