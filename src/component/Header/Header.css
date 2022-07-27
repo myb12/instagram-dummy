@@ -4,7 +4,7 @@
         align-items: center;
         background-color: #fff;
         border-bottom: 1px solid rgb(219, 219, 219);
-        transition: height 0.2s ease-in-out;
+        /* transition: height 0.2s ease-in-out; */
     }
 
     .navbar-brand img {
@@ -23,14 +23,12 @@
         position: absolute;
         left: 16px;
         top: 12px;
-        transition: 0.2s all ease-in-out;
     }
 
     .header-search {
         background-color: #efefef !important;
         border-radius: 10px !important;
         padding-left: 40px !important;
-        transition: 0.3s all linear;
         height: 36px;
         width: 236px !important;
     }
