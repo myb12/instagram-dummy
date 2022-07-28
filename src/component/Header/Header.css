@@ -11,7 +11,7 @@
     }
 
     .header-search-wrapper {
-        margin-left: 200px;
+        margin-left: 165px;
         position: relative;
     }
 
@@ -26,10 +26,10 @@
 
     .header-search {
         background-color: #efefef !important;
-        border-radius: 10px !important;
+        border-radius: 6px !important;
         padding-left: 40px !important;
         height: 36px;
-        width: 236px !important;
+        width: 268px !important;
     }
 
     .header-search::placeholder {

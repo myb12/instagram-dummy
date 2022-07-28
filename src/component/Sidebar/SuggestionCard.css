@@ -1,0 +1,49 @@
+.suggestion-card {
+    padding: 6px;
+}
+
+.suggestion-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.suggestion-card img {
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+}
+
+.suggestion-name {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.suggestion-name p {
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #262626;
+    text-align: left;
+    cursor: pointer;
+}
+
+.suggestion-name p:hover {
+    text-decoration: underline;
+}
+
+.suggestion-name span {
+    font-size: 12px;
+    font-weight: 400;
+    color: #8E8E8E;
+    text-align: left;
+}
+
+.suggestion-card a {
+    color: #0095F6 !important;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+}

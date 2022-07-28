@@ -3,6 +3,7 @@ import './Home.css';
 import Header from '../../component/Header/Header'
 import StorySlider from '../../component/StorySlider/StorySlider';
 import Posts from '../../component/Posts/Posts';
+import Sidebar from '../../component/Sidebar/Sidebar';
 
 const Home = () => {
     const [searchClicked, setSearchClicked] = useState(false);
@@ -25,7 +26,7 @@ const Home = () => {
                     <Posts />
                 </div>
                 <div className="col-12 col-lg-4">
-
+                    <Sidebar />
                 </div>
             </div>
         </div>

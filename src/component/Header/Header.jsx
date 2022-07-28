@@ -16,7 +16,7 @@ const Header = ({ searchClicked }) => {
                     </a>
 
                     <form className={`header-search-wrapper d-none d-lg-block ${searchClicked ? 'search-clicked' : ''}`}>
-                        <input className='header-search form-control me-2 border-0' placeholder="Search" />
+                        <input className='header-search form-control border-0' placeholder="Search" />
                         <BsSearch className='header-search-icon' />
 
                         <RiCloseCircleFill className='search-close-icon' />

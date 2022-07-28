@@ -1,0 +1,41 @@
+.user-card {
+    margin-top: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-card img {
+    border-radius: 50%;
+    height: 56px;
+    width: 56px;
+}
+
+.users-name {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+}
+
+.users-name p {
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #262626;
+    text-align: left;
+}
+
+.users-name span {
+    font-size: 12px;
+    font-weight: 400;
+    color: #8E8E8E;
+    text-align: left;
+}
+
+.user-card a {
+    color: #0095F6 !important;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+}

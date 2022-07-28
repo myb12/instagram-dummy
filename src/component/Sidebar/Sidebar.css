@@ -1,0 +1,38 @@
+.suggestions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 22px;
+    margin-bottom: 4px;
+}
+
+.suggestions p {
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #8E8E8E;
+}
+
+.suggestions a {
+    color: #262626 !important;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.little-footer {
+    text-align: left;
+}
+
+.little-footer a {
+    color: #C7C7C7;
+    font-size: 12px;
+    line-height: 16px;
+    text-decoration: none;
+}
+
+.little-footer svg {
+    color: #C7C7C7;
+    font-size: 12px;
+}
