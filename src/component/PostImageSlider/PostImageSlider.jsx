@@ -16,8 +16,8 @@ const PostImageSlider = ({ images }) => {
         <div className='post-image-slider'>
             <Slider {...settings}>
                 {
-                    images.map((el, i) => <div key={i}>
-                        <img src={el} alt="" />
+                    images?.map((el, i) => <div key={i}>
+                        <img src={el?.standard_resolution?.url} alt="" />
                     </div>)
                 }
 

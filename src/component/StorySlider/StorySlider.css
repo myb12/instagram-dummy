@@ -80,8 +80,8 @@
 
 @media screen and (max-width:480px) {
 
-    .slick-prev:before,
-    .slick-next:before {
+    .story-slider .slick-prev:before,
+    .story-slider .slick-next:before {
         font-size: 6px !important;
     }
 }

@@ -10,7 +10,7 @@ let postImage = [
     'https://i.ibb.co/HhnqLTT/friend-1.jpg',
 ]
 
-const PostCard = () => {
+const PostCard = ({ data }) => {
     const [heartClicked, setHeartClicked] = useState(false);
 
     const handleHeartClick = () => {
@@ -21,9 +21,9 @@ const PostCard = () => {
             <div className="card-header">
                 <div className='d-flex align-items-center'>
                     <div className="user-icon">
-                        <img src="https://scontent.fcgp17-1.fna.fbcdn.net/v/t39.30808-1/289151658_10220525027731503_679096869304353505_n.jpg?stp=cp0_dst-jpg_p74x74&_nc_cat=110&ccb=1-7&_nc_sid=7206a8&_nc_eui2=AeFFqF0RK-f2w1kgsAME1hKmL6cYGyM1G4MvpxgbIzUbgzbxiXAoybOcc0ReFNk-lKdsuLLv5oNYLDHAJzavkMFz&_nc_ohc=mUpSL7-c3yYAX9jWouf&_nc_ht=scontent.fcgp17-1.fna&oh=00_AT8Il8YwU6H13EiHn8rY-ihchwtryMybIsxTEyGMT0JxqQ&oe=62E49CBC" alt="" />
+                        <img src={data?.user?.profile_picture} alt={data?.user?.username} />
                     </div>
-                    <span className="card-user-name">jewelmahmud1274</span>
+                    <span className="card-user-name">{data?.user?.username}</span>
                 </div>
                 <svg aria-label="More options" className="_ab6-" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24">
                     <circle cx="12" cy="12" r="1.5"></circle>
@@ -34,11 +34,11 @@ const PostCard = () => {
 
             <div className='post-image'>
                 {
-                    postImage.length === 1 && <img src="https://i.ibb.co/HhnqLTT/friend-1.jpg" alt="" />
+                    data?.images?.length === 1 && <img src={data?.images[0]?.standard_resolution?.url} alt="" />
                 }
 
                 {
-                    postImage.length > 1 && <PostImageSlider images={postImage} />
+                    data?.images?.length > 1 && <PostImageSlider images={data?.images} />
                 }
 
             </div>
@@ -47,7 +47,7 @@ const PostCard = () => {
                 <div className='d-flex align-items-center'>
                     <div className="heart" onClick={handleHeartClick}>
                         {
-                            heartClicked ? <svg className='heart-clicked' aria-label="Unlike" color="#ed4956" fill="#ed4956" height="24" role="img" viewBox="0 0 48 48" width="24">
+                            heartClicked || data?.user_has_liked ? <svg className='heart-clicked' aria-label="Unlike" color="#ed4956" fill="#ed4956" height="24" role="img" viewBox="0 0 48 48" width="24">
                                 <path d="M34.6 3.1c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5s1.1-.2 1.6-.5c1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path>
                             </svg>
                                 :
@@ -74,7 +74,7 @@ const PostCard = () => {
 
                 <div className="bookmark">
                     <svg aria-label="Save" className="reaction-icons" color="#262626" fill="#262626" height="24" role="img" viewBox="0 0 24 24" width="24">
-                        <polygon fill="none" points="20 21 12 13.44 4 21 4 3 20 3 20 21" stroke="currentColor" stroke-linecap="round" strokeLinejoin="round" strokeWidth="2">
+                        <polygon fill="none" points="20 21 12 13.44 4 21 4 3 20 3 20 21" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2">
                         </polygon></svg>
                 </div>
             </div>
@@ -84,6 +84,11 @@ const PostCard = () => {
                     <img src="https://scontent.fcgp17-1.fna.fbcdn.net/v/t39.30808-1/289151658_10220525027731503_679096869304353505_n.jpg?stp=cp0_dst-jpg_p74x74&_nc_cat=110&ccb=1-7&_nc_sid=7206a8&_nc_eui2=AeFFqF0RK-f2w1kgsAME1hKmL6cYGyM1G4MvpxgbIzUbgzbxiXAoybOcc0ReFNk-lKdsuLLv5oNYLDHAJzavkMFz&_nc_ohc=mUpSL7-c3yYAX9jWouf&_nc_ht=scontent.fcgp17-1.fna&oh=00_AT8Il8YwU6H13EiHn8rY-ihchwtryMybIsxTEyGMT0JxqQ&oe=62E49CBC" alt="" />
                     <p className='liked-by'>Liked by <span>md_ar_if</span> and <span>2 others</span></p>
                 </div>
+
+                <span className='caption'> <span className='fw-bold'>{data?.user?.username}</span> {data?.caption?.text}... <a href="/#">more</a></span>
+                <span className="view-all-comment">
+                    View all 206 comments
+                </span>
 
                 <small>2 DAYS AGO</small>
             </div>

@@ -1,0 +1,90 @@
+.suggestion-slider-card-wrapper {
+    padding-left: 13px;
+    padding-right: 13px;
+}
+
+.suggestion-slider-item {
+    display: flex;
+    justify-content: center;
+}
+
+.suggestion-slider-card {
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    height: 216px;
+    position: relative;
+}
+
+
+.suggestion-slider-card img {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    margin-bottom: 26px;
+}
+
+.suggestion-slider-card-footer {
+    margin-bottom: 30px;
+}
+
+.suggestion-slider-card-footer p,
+.suggestion-slider-card-footer span {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.suggestion-slider-card-footer p {
+    color: #262626;
+    margin-bottom: -4px;
+}
+
+.suggestion-slider-card-footer p {
+    color: #8E8E8E;
+}
+
+.follow-btn {
+    background-color: #0095F6;
+    border-radius: 3px;
+    border: none;
+    padding: 4px 24px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.suggestion-slider .slick-dots li.slick-active button:before,
+.suggestion-slider .slick-dots li button:before {
+    display: none;
+}
+
+.suggestion-slider .slick-prev:before,
+.suggestion-slider .slick-next:before {
+    font-family: 'slick';
+    font-size: 28px;
+    line-height: 1;
+    opacity: .75;
+    color: #626262 !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.suggestion-slider .slick-next::before {
+    margin-left: -62px !important;
+}
+
+.suggestion-slider .slick-prev::before {
+    margin-left: 20px !important;
+}
+
+.suggestion-slider .slick-prev {
+    z-index: 2;
+}
+
+.suggestion-close {
+    color: #26262670;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 26px;
+}

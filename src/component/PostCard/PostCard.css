@@ -12,6 +12,10 @@
     justify-content: space-between;
 }
 
+.card-header svg {
+    cursor: pointer;
+}
+
 .card-user-name {
     margin-left: 14px;
     font-size: 14px;
@@ -97,7 +101,7 @@
 }
 
 .post-card-footer a {
-    color: #0095f6 !important;
+    color: #0095f673 !important;
     font-size: 14px;
     font-weight: 600;
     text-decoration: none;
@@ -125,6 +129,39 @@
     animation: scale-animation 0.45s ease-in-out;
 }
 
+.caption {
+    display: inline-block;
+    color: #262626;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    text-align: left;
+    padding: 12px 9px 0 9px;
+    width: 100%;
+}
+
+.caption a {
+    text-decoration: none;
+    color: #8E8E8E;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.caption a:hover {
+    color: #8E8E8E;
+}
+
+.view-all-comment {
+    display: block;
+    color: #8E8E8E;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    text-align: left;
+    padding: 9px 9px 0 9px;
+    cursor: pointer;
+}
 
 @keyframes scale-animation {
     from {

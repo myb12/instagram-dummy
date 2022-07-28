@@ -1,23 +1,12 @@
 import React from 'react';
 import { BsDot } from 'react-icons/bs';
+import { footerLinks, suggestionData } from '../../fakeData/fakeData';
 import './Sidebar.css';
 import SuggestionCard from './SuggestionCard';
 import UserCard from './UserCard';
 
-const footerLinks = [
-    'About',
-    'Help',
-    'Press',
-    'API',
-    'Jobs',
-    'Privacy',
-    'Terms',
-    'Locations',
-    'Language',
-    'English',
-]
-
 const Sidebar = () => {
+
     return (
         <div>
             <UserCard />
@@ -26,7 +15,7 @@ const Sidebar = () => {
                 <a href="/#">See All</a>
             </div>
             {
-                [...new Array(5)].map((el, i) => <SuggestionCard key={i} />)
+                suggestionData.slice(0, 5).map((el, i) => <SuggestionCard key={i} data={el} />)
             }
 
             <div className="little-footer">
@@ -36,6 +25,8 @@ const Sidebar = () => {
                         <BsDot />
                     </span>)
                 }
+
+                <p className='copywrite'>© 2022 INSTAGRAM FROM META</p>
             </div>
         </div>
     );
