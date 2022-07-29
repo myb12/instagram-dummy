@@ -25,7 +25,7 @@ const Home = () => {
                     <StorySlider />
                     <Posts />
                 </div>
-                <div className="col-12 col-lg-4">
+                <div className="col-12 col-lg-4 d-none d-lg-block">
                     <Sidebar />
                 </div>
             </div>
